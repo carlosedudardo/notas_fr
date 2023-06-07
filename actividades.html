@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Actividades</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="validarTexto"></h1>
+    </header>
+    <main>
+        <h3 id="nombreText"></h3>
+        <h3 id="apellidoText"></h3>
+        <section>
+            <table class="table-bordered" id="actividadesTb">
+                <thead class="table-encabezado">
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripción</th>
+                        <th>Nota</th>
+                        <th></th><!-- Los dos espacios son para el boton modificar y eliminar-->
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table-content">
+
+                </tbody>
+            </table><br>
+            <p id="promedio"></p>
+            <section>
+                <button id="btnRegistrarAct">Registrar Actividad</button>
+            </section><br>
+        </section>
+        <section id="inputsContainerAct">
+            <h3 id="tituloAct"></h3>
+            <form>
+                <label>
+                    <span>Descripción: </span>
+                    <input type="text" name="descripcion" id="descripcionId" required>
+                </label><br><br>
+                <label>
+                    <span>Nota: </span>
+                    <input type="number" maxlength="200" name="nota" id="notaId" min="0" max="5" step="0.01" required>
+                </label><br><br>
+                <button type="button" id="btnGuardarAct">Guardar</button>
+            </form>
+        </section>
+        <br><br>
+        <button id="btnRegresar">Regresar</button>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/actividades.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+    <main>
+        <section>
+            <table class="table-bordered" id="estudiantesTb">
+                <thead class="table-encabezado">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th></th><!-- Los tres espacios son para el boton modificar, eliminar y notas -->
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table-content">
+
+                </tbody>
+            </table><br>
+            <section>
+                <button id="btnRegistrar">Registrar Estudiante</button>
+            </section><br>
+        </section>
+        <section>
+            <h3 id="titulo"></h3>
+            <form>
+                <label>
+                    <span>Código: </span>
+                    <input type="number" name="codigo" id="codigoId" min="1" required>
+                </label><br><br>
+                <label>
+                    <span>Nombre: </span>
+                    <input type="text" maxlength="150" name="nombres" id="nombresId" required>
+                </label><br><br>
+                <label>
+                    <span>Apellido: </span>
+                    <input type="text" maxlength="200" name="apellidos" id="apellidosId" required>
+                </label><br><br>
+                <button type="button" id="btnGuardar">Guardar</button>
+            </form>
+        </section>
+    </main>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <script src="js/gestionEstudiante.js"></script>
+</body>
+
+</html>
